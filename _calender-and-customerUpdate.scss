@@ -1,0 +1,467 @@
+
+
+
+.achivments{
+    display: flex;
+    background-color: rgb(245, 247, 250);
+    min-height: 30vh;
+    justify-content: space-around;
+    
+
+    header{
+      width: 50%;
+        color:$first-color;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    
+        justify-content: center;
+
+
+        p{
+            
+            margin-top: 10px;
+        }
+
+
+       
+        span{
+            color:$theme-color
+        }
+    }
+
+
+    .achivements-count{
+   display: flex;
+   flex-wrap: wrap;
+   width: 40%;
+   
+   align-items: center;
+        
+        
+        
+    }
+    .counter{
+        display: flex;
+      
+        margin-right: 40px;
+        height: fit-content;
+
+        .pic{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            img{
+                width: 50px;
+            }
+        }
+    }
+    .number {
+    
+     display: flex;
+     flex-direction: column;
+     
+     
+     justify-content: center;
+     letter-spacing: 1px;
+     word-spacing: 2px;
+     font-weight: bold;
+     p{
+        font-size: 25px;
+        font-family: $font-family1;
+        color:$first-color
+     }
+     p1{
+        font-size: 15px;
+        color:$second-color;
+        font-weight: lighter;
+        margin-top: 5px;
+    
+     }
+    }
+  
+}
+
+
+@media(max-width:692px){
+    .achivments{
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+       
+
+        header{
+            width: 100%;
+            margin: 10px;
+        }
+        .achivements-count{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+
+/************calender start***********/
+
+
+
+
+.calender{
+    min-height: 50vh;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    
+    
+
+
+    .picture{
+        width: 35%;
+        margin: 5px;
+        
+            img{
+                max-width: 500px;
+                width: 100%;
+                margin: 5px;
+            }
+    }
+
+    .description{
+        width: 50%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+
+        h2{
+            font-size: 40px;
+            color:$first-color;
+            font-family: $font-family1;
+             margin-bottom: 15px;
+        }
+        p{
+            color: $second-color;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+        .button{
+            width: fit-content;
+        }
+    }
+}
+@media(max-width:882px)
+{
+    .calender{
+        
+        flex-direction: column;
+        
+        justify-content: center;
+
+
+        .picture{
+        
+            width: 100%;
+            justify-content: center;
+    
+            img{
+                width: 100%;
+    
+            }
+        }
+        .description{
+           width: 100%;
+        
+            justify-content: center;
+        }
+    }
+
+  
+}
+
+
+
+.customers{
+    min-height: 50vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    picture{
+        width: 30%;
+        margin: 20px;
+        img{
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+
+    .information{
+        width: 60%;
+        padding: 10px;
+
+        p{
+            color: $second-color;
+            line-height: 25px;
+            word-spacing: 2px;
+            margin:15px 0px;
+            
+
+        }
+        p1{
+            color:$theme-color;
+            font-weight: bold;
+            font-size: 20px;
+            word-spacing: 2px;
+        }
+    }
+
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+        
+            width: 50px;
+            margin-right:25px ;
+
+        }
+        span{
+        
+            color:$theme-color;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:hover img{
+                margin-left:15px ;
+                width: 25px;
+
+            }
+            
+            img{
+                margin-left: 10px;
+                width: 18px;
+            }
+            
+        }
+    }
+}
+
+@media(max-width:857px){
+    .customers{
+        flex-direction: column;
+
+        picture{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            
+            align-items: center;
+            img{
+                width: 80%;
+
+            }
+        }
+
+        .information{
+            width: 100%;
+            padding:  5px 20px;
+        }
+    }
+}
+
+
+
+
+.marketing{
+    min-height: 50vh;
+    margin-top: 20px;
+    padding:20px;
+    margin-bottom: 20px;
+
+     
+    header{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .marketing-review{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    .review{
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        margin: 20px 30px;
+
+        .pic{
+            width: 300px;
+            width: 100%;
+        
+            img{
+                width: 100%;
+
+            }
+        }
+
+        .more-review{
+            padding: 10px;
+        }
+
+        p{
+            color:$second-color;
+            font-family: $font-family1;
+            margin-bottom: 10px;
+        }
+
+        span{
+            color:$theme-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            img{
+                width: 18px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+}
+
+
+
+
+.demo{
+    min-height: 25vh;
+    margin-top: 15px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom:20px ;
+    padding: 10px;
+  
+    p{
+        font-size: 45px;
+        font-weight: 600;
+        font-family: $font-family1;
+        color: $first-color;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .button-demo{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        background-color: $theme-color;
+        color: $bg-color;
+       padding: 15px 30px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: $font-family1;
+        cursor: pointer;
+
+        &:hover{
+            background-color: black;
+        }
+
+        
+        img{
+            margin-left: 5px;
+            filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+            width: fit-content;
+        }
+    }
+}
+    
+        
+        
+
+
+
+footer{
+    min-height: 50vh;
+    background-color: rgb(38, 50, 56);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .contact img{
+        width: 40px;
+    }
+    span{
+        font-size: 40px;
+        font-family: $font-family1;
+        color:#fff;
+    }
+
+    p{
+        color:#fff;
+        margin: 14px 0px;
+        font-family: $font-family1;
+    }
+    .icon{
+        display: flex;
+        margin-top: 35px;
+        margin-bottom:30px;
+        i{   display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-right: 10px;
+             border-radius: 50%;
+             color:#fff;
+            background-color: rgb(60, 71, 76);
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+
+    .company-support{
+        display: flex;
+        .company, .support{
+            margin: 20px 35px;
+
+            h3{
+                font-size: 25px;
+                color:$bg-color
+            }
+        }
+    }
+
+    .update{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        p{
+            font-size: 20px;
+            word-spacing: 2px;
+
+        }
+        input{
+            background-color: rgb(210, 223, 230);
+            color: #fff;
+            border: 2px saddlebrown solid;
+        }
+    }
+}
+ 
+        

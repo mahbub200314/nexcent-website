@@ -1,0 +1,223 @@
+$font-family1: "Inter", sans-serif;
+$bg-color:#F5F7FA;
+$theme-color:rgb(76, 175, 79);
+
+$first-color:#4D4D4D;
+$second-color:#717171;
+$hover-color:#66BB69;
+
+nav{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding: 10px 8%;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+    
+
+}
+.logo img{
+    width: 150px;
+    
+}
+
+.navbarbg{
+    background-color:#C8E6C9;
+    border-bottom: 1px solid gray;
+    box-shadow: 0px 0px 15px gray;
+    transition: all 0.3s ease;
+}
+
+nav .nav-item{
+    display: flex;
+    align-items: center;
+    
+    
+    li{
+        list-style: none;
+         height: 100%;
+         padding:15px 20px;
+         transition:all 0.3s ease;
+         
+
+       
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color:$first-color;
+        &:hover{
+            color:#66BB69;
+        }
+
+    }
+    .register a{
+        display: flex;
+        padding: 17px 36px;
+        border-radius: 5px;
+    
+        background-color: $theme-color;
+        color:$bg-color;
+        align-items: center;
+        transition: all 0.3s ease;
+        
+        &:hover{
+            background-color: $hover-color;
+            
+
+        }
+        &:hover i{
+            transform: scale(1.2);
+            margin-left: 50px;
+        }
+        
+        i{
+            transition: all 0.3s ease;
+            margin-left: 15px;
+           
+        }
+        
+        
+    }
+  
+
+}
+
+input{
+   display: none; 
+}
+
+
+
+@media(max-width:1089px){
+    .nav-item{
+        position: absolute;
+        top:-580px;
+        left: 0px;
+        right: 0px;
+        flex-direction: column;
+        background-color: $theme-color;
+        text-align: center;
+        transition: all 0.5s ease-in;
+        
+        li{
+            border: 2px solid $hover-color;
+            width: 100%;
+            &:hover{
+                background-color: $hover-color;
+                cursor: pointer;
+            }
+            
+        }
+        li a{
+            font-size: 22px;
+            
+        }
+        
+        
+        li:hover a{
+            color:white;
+
+        }
+           
+        
+    }
+
+
+
+    nav .nav-item .register a{
+        background-color: transparent;
+        color: $first-color;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+
+    .toggle{
+        width: 44px;
+        height: 44px;
+        background-color: $bg-color;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0,0.3);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        cursor: pointer;
+        overflow: hidden;
+        padding:2px 0px;
+        position: relative;
+    }
+
+    .span1{
+        background-color: $theme-color;
+        width: 25px;
+        height: 2.5px;
+        border-radius: 50px;
+        margin: 5px;
+        margin-left:5px ;
+    }
+
+    .span2{
+        background-color: $theme-color;
+        width: 35px;
+        height: 2.5px;
+        border-radius: 50px;
+        margin: 5px;
+        margin-left:5px ;
+      
+    }
+
+    .span3{
+        background-color: $theme-color;
+        width: 25px;
+        height: 2.5px;
+        border-radius: 50px;
+        margin: 5px;
+        margin-left:5px ;
+      
+        
+        
+    }
+
+    input:checked ~ .toggle .span2{
+          margin-left: 50px;
+          transition: all 0.3s ease;
+    }
+
+    input:checked ~ .toggle .span1{
+        position: absolute;
+    
+        transform: translate(0) rotate(45deg);
+        width: 40px;
+      
+        
+    }
+
+    input:checked ~ .toggle .span3{
+        position: absolute;
+        transform: translate(0) rotate(-45deg);
+        width: 40px;
+      
+        
+    }
+
+    input:checked ~  .nav-item{
+    top:80px;
+    transition-delay: 0.1s;
+        
+    }
+
+    
+       
+    
+}
